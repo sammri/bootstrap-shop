@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick Owens Shoes Store</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg ">
+  <div class="container">
+      <a class="navbar-brand" href="#">Rick Owens Shoes</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="#products">Каталог</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#about">О нас</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#contact">Контакты</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="container hero-content">
+      <h1>Эксклюзивная обувь Rick Owens</h1>
+      <p>Коллекция для тех, кто ценит стиль и качество.</p>
+      <a href="#products" class="btn btn-lg bg-btn">Посмотреть коллекцию</a>
+  </div>
+</section>
+
+<!-- Product Cards Section -->
+<section id="products" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Наши товары</h2>
+        <div class="row g-4">
+            <!-- Product Card 1 -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="./src/img/geobasket.jpg" class="card-img-top" alt="Обувь 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Rick Owens Geobasket</h5>
+                        <p class="card-text">Высокие кроссовки с фирменным дизайном.</p>
+                        <p class="card-text"><strong>Цена: 50 000</strong></p>
+                        <a href="#" class="btn btn-warning w-100">Купить</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product Card 2 -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="./src/img/sneaker.jpg" class="card-img-top" alt="Обувь 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Rick Owens Sock Sneaker</h5>
+                        <p class="card-text">Ультралегкие и удобные кроссовки.</p>
+                        <p class="card-text"><strong>Цена: 45 000</strong></p>
+                        <a href="#" class="btn btn-warning w-100">Купить</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product Card 3 -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="./src/img/runner.jpg" class="card-img-top" alt="Обувь 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Rick Owens Runner</h5>
+                        <p class="card-text">Модель для активного образа жизни.</p>
+                        <p class="card-text"><strong>Цена: 55 000</strong></p>
+                        <a href="#" class="btn btn-warning w-100">Купить</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Floating Cart Button -->
+    <button class="cart-button">
+      <svg class="cart-button__icon" width="30" height="30">
+          <use href="./src/img/symbol-defs.svg#icon-shopping-cart"></use>
+      </svg>
+      <p class="cart-number">8</p>
+  </button>
+
+<!-- Contact Form Section -->
+<section id="contact" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Свяжитесь с нами</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form class="form" style="border: 2px dashed #333; padding: 20px; border-radius: 5px;">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Ваше имя</label>
+                        <input type="text" class="form-control" id="name" placeholder="Введите ваше имя">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Ваш Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Введите ваш email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Сообщение</label>
+                        <textarea class="form-control" id="message" rows="3" placeholder="Введите ваше сообщение" style="resize: none;"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer bg-dark text-white py-4">
+    <div class="container text-center">
+        <p>&copy; 2024 Rick Owens Shoes. Все права защищены.</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
